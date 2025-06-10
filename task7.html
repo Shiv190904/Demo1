@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appointment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      border-bottom: 3px solid maroon;
+      padding-bottom: 10px;
+    }
+
+    form {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: inline-block;
+      width: 150px;
+      vertical-align: top;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 200px;
+      padding: 5px;
+      margin-top: 8px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-left: 5px;
+    }
+
+    .full-width {
+      width: 410px;
+    }
+
+    textarea {
+      height: 60px;
+      resize: vertical;
+    }
+
+    .appointment-types {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 8px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Appointment Form</h2>
+
+  <form>
+    <label for="date">Appointment Date</label>
+    <input type="date" id="date" name="date"><br>
+
+    <label for="time">Appointment Time</label>
+    <input type="time" id="time" name="time"><br>
+
+    <label>Name</label>
+    <input type="text" placeholder="First" name="first">
+    <input type="text" placeholder="Last" name="last"><br>
+
+    <label>Gender</label>
+    Male <input type="radio" name="gender" value="male">
+    Female <input type="radio" name="gender" value="female"><br>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone"><br>
+
+    <label>Address</label>
+    <input type="text" placeholder="City" name="city">
+    <input type="text" placeholder="State" name="state"><br>
+
+    <label for="query">Your Query</label>
+    <textarea id="query" name="query" class="full-width"></textarea><br>
+
+    <label>Appointment Type</label>
+    <div class="appointment-types">
+      <p>Select which appointment type(s) you require</p>
+      <input type="checkbox" name="apptType" value="cervix"> Cervix checkup<br>
+      <input type="checkbox" name="apptType" value="heart"> Heart checkup<br>
+      <input type="checkbox" name="apptType" value="eye"> Eye check-up<br>
+      <input type="checkbox" name="apptType" value="hearing"> Hearing Test
+    </div><br>
+
+    <label></label>
+    <button type="submit">Send</button>
+  </form>
+
+</body>
+</html>
