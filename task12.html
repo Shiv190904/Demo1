@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f6fa;
+    }
+    header {
+      padding: 1rem;
+      text-align: center;
+      background: #eaf1f8;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2f855a;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #2f855a;
+    }
+    .card p {
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Welcome to the School Dashboard</header>
+
+  <section class="grid">
+    <div class="card">
+      <h2>500</h2>
+      <p>Total Students</p>
+    </div>
+    <div class="card">
+      <h2>50</h2>
+      <p>Total Teachers</p>
+    </div>
+    <div class="card">
+      <h2>20</h2>
+      <p>Classes</p>
+    </div>
+    <div class="card">
+      <h2>5</h2>
+      <p>Upcoming Exams</p>
+    </div>
+  </section>
+
+</body>
+</html>
